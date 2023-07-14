@@ -66,8 +66,8 @@ public class GerenciamentoVotacao implements GerenciamentoVotacaoInterface {
    */
   public void mostrarResultado() {
     int allVotes = cpfsComputados.size();
-    if ( allVotes > 0) {
-      for(PessoaCandidata candidata : pessoasCandidatas) {
+    if (allVotes > 0) {
+      for (PessoaCandidata candidata : pessoasCandidatas) {
         double percentual = Math.round((double) candidata.getVotos() / allVotes * 100);
         System.out.println("Nome: " + candidata.getNome() + " - " + candidata.getVotos()
             + " votos ( " + percentual + "% )");
